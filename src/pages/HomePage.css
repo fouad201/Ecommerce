@@ -1,0 +1,23 @@
+.products-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Use shared .grid container from global styles to keep layout consistent */
+.grid {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    gap: 1rem;
+  }
+}
