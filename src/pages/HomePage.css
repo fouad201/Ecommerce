@@ -10,7 +10,7 @@
     grid-template-columns: 1fr;
   }
 }
-/* Use shared .grid container from global styles to keep layout consistent */
+
 .grid {
   margin-top: 1rem;
   gap: 1.5rem;

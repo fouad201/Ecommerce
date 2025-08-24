@@ -1,5 +1,6 @@
 import { useCart } from "../state/CartContext.jsx";
-import "./CartPage.css"; // Assuming you have a CartPage.css for styling
+import "./CartPage.css"; 
+
 
 export default function CartPage() {
   const { cart, total, setQty, remove, clear } = useCart();

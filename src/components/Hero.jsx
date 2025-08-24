@@ -11,7 +11,7 @@ export default function Hero() {
     let mounted = true;
     async function loadFeaturedProducts() {
       try {
-        const { data } = await api.get("/products?limit=5"); // Get 5 products for the hero
+        const { data } = await api.get("/products?limit=5"); 
         if (mounted) {
           setFeaturedProducts(data);
         }
@@ -26,7 +26,7 @@ export default function Hero() {
   }, []);
 
   useEffect(() => {
-    // Auto-slide every 5 seconds
+    
     const timer = setInterval(() => {
       setActiveSlide((current) =>
         current === featuredProducts.length - 1 ? 0 : current + 1

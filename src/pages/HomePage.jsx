@@ -6,8 +6,7 @@ import "./HomePage.css";
 
 export default function HomePage() {
   const [products, setProducts] = useState([]);
-  const [status, setStatus] = useState("idle"); // idle | loading | error
-
+  const [status, setStatus] = useState("idle"); 
   useEffect(() => {
     let mounted = true;
     (async () => {
@@ -32,8 +31,6 @@ export default function HomePage() {
       <Hero />
       <div className="container">
         <h2>All Products</h2>
-        {status === "loading" && <p>Loading products…</p>}
-        {status === "error" && <p>Couldn’t load products. Try again.</p>}
         <div className="grid">
           {products.map((p) => (
             <ProductCard key={p.id} product={p} />

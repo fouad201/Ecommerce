@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-import HomePage from "./pages/HomePage.jsx";
-import CartPage from "./pages/CartPage.jsx";
-import LoginPage from "./pages/LoginPage.jsx";
-import ProductDetailPage from "./pages/ProductDetailPage.jsx";
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+import CartPage from "./pages/CartPage";
+import LoginPage from "./pages/LoginPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
 
 export default function App() {
   return (
