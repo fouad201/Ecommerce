@@ -7,7 +7,7 @@ import "./login.css";
 
 export default function LoginPage() {
   const router = useRouter();
-  const [username, setUsername] = useState(""); // FakeStore uses username
+  const [username, setUsername] = useState(""); 
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState("");
@@ -24,20 +24,20 @@ export default function LoginPage() {
       });
 
       if (!res.ok) {
-        // 401 أو 400
+        
         const t = await res.text();
         throw new Error(t || "Login failed");
       }
-      const data = await res.json(); // { token: "..." }
+      const data = await res.json(); 
       if (!data?.token) throw new Error("No token returned");
 
-      // خزّن التوكن كجلسة بسيطة
+      
       localStorage.setItem("fs_token", data.token);
 
-      // لو عايز تحفظ المستخدم كـ"داخل" في استورك/كونتكست، ممكن تضيف ده هنا.
-      // مثال: setUser({ username })
+      
+      
 
-      router.push("/"); // رجّع المستخدم للهوم (أو صفحة رجوع)
+      router.push("/"); 
     } catch (e) {
       setErr(e.message || "Login error");
     } finally {
@@ -81,7 +81,7 @@ export default function LoginPage() {
           {err && <p style={{ color: "crimson", marginTop: 8 }}>{err}</p>}
         </form>
 
-        {/* حسابات تجريبية شائعة للاختبار */}
+        
         <div style={{ marginTop: 12, fontSize: 13, opacity: 0.8 }}>
           <div>
             Example username: <code>mor_2314</code>

@@ -1,4 +1,4 @@
-// app/shop/page.js
+
 import ShopFilters from "@/components/ShopFilters";
 import ShopGrid from "@/components/ShopGrid";
 import Pagination from "@/components/Pagination";

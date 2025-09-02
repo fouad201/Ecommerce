@@ -1,4 +1,4 @@
-// components/DiscountsSection.jsx
+
 import ProductCard from "./ProductCard";
 import styles from "./DiscountsSection.module.css";
 

@@ -1,4 +1,4 @@
-// components/CartButton.jsx
+
 "use client";
 import { FiShoppingCart } from "react-icons/fi";
 import { useCart } from "./cart/CartContext";

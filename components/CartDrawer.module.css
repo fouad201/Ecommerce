@@ -1,4 +1,4 @@
-/* components/CartDrawer.module.css */
+
 .overlay {
   position: fixed; inset: 0; background: rgba(0,0,0,.35);
   opacity: 0; pointer-events: none; transition: opacity .2s ease;

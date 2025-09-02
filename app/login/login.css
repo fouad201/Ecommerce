@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #f3f4f6; /* رمادي فاتح */
+  background: #f3f4f6; 
 }
 
 .login-box {
@@ -19,7 +19,7 @@
   margin-bottom: 1.5rem;
   font-size: 24px;
   font-weight: bold;
-  color: #111827; /* غامق */
+  color: #111827; 
 }
 
 .login-box form {
@@ -37,7 +37,7 @@
 }
 
 .login-box input:focus {
-  border-color: #f43f5e; /* أحمر */
+  border-color: #f43f5e; 
   box-shadow: 0 0 0 2px rgba(244, 63, 94, 0.2);
 }
 
@@ -59,7 +59,7 @@
 
 .login-box button {
   padding: 12px;
-  background: #f43f5e; /* أحمر */
+  background: #f43f5e; 
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -69,5 +69,5 @@
 }
 
 .login-box button:hover {
-  background: #e11d48; /* أحمر غامق */
+  background: #e11d48; 
 }

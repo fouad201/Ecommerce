@@ -1,4 +1,4 @@
-// components/Footer.jsx
+
 import Link from "next/link";
 import styles from "./Footer.module.css";
 

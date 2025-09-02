@@ -1,4 +1,4 @@
-// components/cart/CartContext.jsx
+
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useReducer } from "react";
@@ -47,16 +47,16 @@ function reducer(state, action) {
 export function CartProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, { items: [] });
 
-  // Hydrate from localStorage once
+  
   useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (raw) dispatch({ type: "HYDRATE", payload: JSON.parse(raw) });
     } catch {}
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, []);
 
-  // Persist on every change
+  
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state.items));
