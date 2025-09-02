@@ -1,0 +1,18 @@
+.wrap { padding: 24px 0; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.tile {
+  border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden;
+  background: #fff; display: grid; grid-template-rows: 1fr auto;
+}
+.tileBody { padding: 16px; display: grid; gap: 8px; }
+.tileTitle { font-weight: 800; font-size: 18px; margin: 0; }
+.tileDesc { color: #475569; font-size: 14px; }
+.cta { border: 1px solid #e5e7eb; padding: 8px 12px; border-radius: 10px; background: #fff; width: fit-content; cursor: pointer; }
+.media { width: 100%; height: 160px; object-fit: cover; background: #f1f5f9; }
+
+@media (max-width: 1100px){ .grid{ grid-template-columns: repeat(2,1fr);} }
+@media (max-width: 640px){ .grid{ grid-template-columns: 1fr;} }

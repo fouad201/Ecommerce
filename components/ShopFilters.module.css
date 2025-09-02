@@ -1,0 +1,10 @@
+/* components/ShopFilters.module.css */
+.wrap { background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:12px; margin-bottom:12px; }
+.row { display:grid; grid-template-columns: 1.2fr 1fr 1fr auto; gap:10px; }
+.label { font-size:12px; color:#6b7280; margin-bottom:4px; }
+.input, .select { width:100%; padding:10px 12px; border:1px solid #e5e7eb; border-radius:10px; background:#f8fafc; }
+.actions { display:flex; gap:8px; align-items:end; }
+.btn { padding:10px 14px; border:none; border-radius:10px; cursor:pointer; }
+.primary { background:#111827; color:#fff; }
+.ghost { background:#fff; border:1px solid #e5e7eb; }
+@media (max-width:900px){ .row{ grid-template-columns:1fr 1fr; } .actions{ grid-column:1/-1; } }

@@ -1,0 +1,6 @@
+/* components/ShopGrid.module.css */
+.count { margin: 8px 0 14px; color:#475569; }
+.grid { display:grid; gap:14px; grid-template-columns: repeat(4, 1fr); }
+@media (max-width:1100px){ .grid{ grid-template-columns: repeat(3, 1fr);} }
+@media (max-width:800px){ .grid{ grid-template-columns: repeat(2, 1fr);} }
+@media (max-width:540px){ .grid{ grid-template-columns: 1fr;} }

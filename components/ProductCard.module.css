@@ -1,0 +1,64 @@
+.card {
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+  background: #fff;
+  height: 100%;
+}
+
+.thumbWrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 14px;
+  line-height: 1.35;
+  height: 3.5em; 
+  overflow: hidden;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+
+.actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+}
+
+.btn,
+.secondaryBtn {
+  flex: 1;
+  background: #000; 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;  
+  font-size: 13px;    
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-align: center;
+}
+
+.btn:hover,
+.secondaryBtn:hover { background: #222; }
+
+.btnContent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  line-height: 1;
+}
+
+.btnContent svg { display: block; }

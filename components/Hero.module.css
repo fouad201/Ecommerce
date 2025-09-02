@@ -1,0 +1,74 @@
+.hero{
+  background: radial-gradient(120% 120% at 15% 0%, #1f2937, #0b0f17);
+  color:#fff;
+  padding:24px 0;
+}
+
+/* إطار السلايدر */
+.carousel{
+  position:relative;
+  overflow:hidden;
+  border-radius:16px;
+  border:1px solid #111827;
+}
+
+/* المسار المتحرّك (نقل بالـ transform) */
+.track{
+  display:flex;
+  transition: transform .55s ease;
+  will-change: transform;
+}
+
+/* كل سلايد يملأ العرض */
+.slide{
+  flex:0 0 100%;
+  display:grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items:center;
+  gap:24px;
+  padding:24px;
+  min-height:300px;
+}
+
+/* المحتوى اليسار */
+.left{ display:grid; align-content:center; gap:8px; }
+.kicker{ color:#cbd5e1; font-weight:600; text-transform:capitalize; letter-spacing:.3px; }
+.h1{ font-size:clamp(24px, 3.6vw, 44px); line-height:1.08; font-weight:900; margin:2px 0; color:#fff; }
+.desc{ color:#9ca3af; max-width:58ch; }
+.price{ font-size:20px; font-weight:800; }
+
+.ctaRow{ margin-top:6px; display:flex; gap:8px; flex-wrap:wrap; }
+.btn{ background:#fff; color:#111827; border:none; padding:8px 14px; border-radius:10px; font-weight:700; cursor:pointer; }
+.btnGhost{ background:transparent; color:#fff; border:1px solid #334155; padding:8px 14px; border-radius:10px; cursor:pointer; }
+
+/* الصورة يمين */
+.right{
+  width:100%;
+  border-radius:14px;
+  background: radial-gradient(80% 80% at 70% 30%, #0f172a, #0b0f17);
+  display:grid; place-items:center; overflow:hidden; padding:12px;
+  border:1px solid #0b1220;
+}
+.phone{ width:82%; height:auto; object-fit:contain; filter:drop-shadow(0 10px 24px rgba(0,0,0,.45)); }
+
+/* الأسهم */
+.arrow{
+  position:absolute; top:50%; transform:translateY(-50%);
+  border:1px solid #334155; background:rgba(8,12,20,.7); color:#e5e7eb;
+  padding:8px 10px; border-radius:10px; cursor:pointer; z-index:2;
+}
+.prev{ left:12px; }
+.next{ right:12px; }
+.arrow[disabled]{
+  opacity:.45; cursor:not-allowed;
+}
+
+/* النقاط */
+.dots{ display:flex; gap:6px; align-items:center; justify-content:center; margin-top:10px; }
+.dot{ width:7px; height:7px; border-radius:9999px; background:#334155; cursor:pointer; }
+.dotActive{ background:#fff; }
+
+@media (max-width:900px){
+  .slide{ grid-template-columns:1fr; gap:12px; padding:16px; }
+  .right{ order:-1; }
+}

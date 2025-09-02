@@ -1,0 +1,4 @@
+/* components/Pagination.module.css */
+.wrap{ display:flex; gap:8px; justify-content:center; margin:16px 0; }
+.page{ padding:8px 12px; border:1px solid #e5e7eb; border-radius:10px; background:#fff; cursor:pointer; }
+.active{ background:#111827; color:#fff; border-color:#111827; }

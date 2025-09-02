@@ -1,0 +1,15 @@
+.footer {
+  margin-top: 28px;
+  background: #0b0f17; color: #cbd5e1;
+  padding: 36px 0 20px;
+}
+.top {
+  display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 16px;
+  border-bottom: 1px solid #111827; padding-bottom: 16px; margin-bottom: 12px;
+}
+.brand { color: #fff; font-weight: 900; font-size: 20px; }
+.h { color: #fff; font-weight: 700; margin-bottom: 8px; }
+.link { display: block; color: #94a3b8; padding: 4px 0; font-size: 14px; }
+.copy { color: #64748b; font-size: 13px; }
+@media (max-width: 900px){ .top{ grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px){ .top{ grid-template-columns: 1fr; } }

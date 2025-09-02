@@ -1,0 +1,72 @@
+/* components/ProductSlider.module.css */
+.wrap { padding: 24px 0; }
+.head { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+.title { font-size:20px; font-weight:800; }
+
+.viewport {
+  position: relative;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: 12px;
+  will-change: transform;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  flex: 0 0 auto; /* العرض بيتحدد inline بالـ JS */
+  border: 1px solid #eee;
+  border-radius: 14px;
+  background: #fff;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.title2 {
+  font-size: 14px;
+  line-height: 1.35;
+  height: 3.5em;
+  overflow: hidden;
+}
+
+.row {
+  display:flex; align-items:center; justify-content:space-between;
+}
+
+.price { font-weight: 800; }
+
+.btn {
+  background:#111827; color:#fff;
+  border:none; border-radius:10px;
+  padding:10px 12px; cursor:pointer;
+}
+
+/* Nav buttons */
+.nav {
+  display:flex; gap:8px; align-items:center;
+}
+.arrow {
+  border:1px solid #e5e7eb; background:#fff; border-radius:10px;
+  padding:8px 10px; cursor:pointer;
+}
+
+.dots {
+  display:flex; gap:6px; align-items:center; justify-content:center;
+  margin-top: 10px;
+}
+.dot {
+  width: 8px; height: 8px; border-radius: 9999px;
+  background: #e5e7eb;
+}
+.dotActive { background: #111827; }
